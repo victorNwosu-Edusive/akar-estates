@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Garet';
+  src: url(../src/assets/fonts/garet/Garet-Book.ttf);
+}
