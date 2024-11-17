@@ -19,7 +19,7 @@ function App() {
         <img src={headerimage} alt="" className='md:h-fit sm:h-fit' />
       </div>
     
-      <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10'>
+      <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10' id="about-us">
         <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
           <div className='about-header'>
         <p className='text-sm text-rose-300 font-primary tracking-[.40em] font-bold md:px-5 lg:px-5'>ABOUT US</p>
