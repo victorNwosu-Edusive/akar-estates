@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import headerimage from './assets/images/header-imager.png'
+import aboutimage from './assets/images/about-image.jpg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/navbar'
@@ -18,7 +19,7 @@ function App() {
         <img src={headerimage} alt="" className='md:h-fit sm:h-fit' />
       </div>
     
-      <div className='bg-white p-9 md:p-32 lg:p-32 py-32'>
+      <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10'>
         <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
           <div className='about-header'>
         <p className='text-sm text-rose-300 font-primary tracking-[.40em] font-bold md:px-5 lg:px-5'>ABOUT US</p>
@@ -28,9 +29,11 @@ function App() {
         <div>
           <p className='font-primary text-sm'>Akar Estates is a premier destination for modern living. With thoughtfully designed spaces and lush surroundings, 
             we bring you closer to nature without compromising luxury.</p>
+            
         </div>
         </div>
       </div>
+      <img src={aboutimage} alt="" className='w-full h-full md:hidden lg:hidden' />
     </>
   )
 }
