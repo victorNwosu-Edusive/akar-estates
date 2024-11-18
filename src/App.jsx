@@ -10,20 +10,22 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='bg-rose-100 p-16 md:p-32 pt-36 md:pt-44 lg:pt-48 h-auto md:h-lvh grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-6'>
-        <div className='pb-5'>
-        <p className='font-primary font-bold text-4xl pb-5'>Find Your Root in Luxury and Comfort at <span className='text-rose-600 font-extrabold'>Akar Estates</span></p>
-        <p className='font-primary pb-5 text-sm font-bold'>Discover a harmonious blend of modern design, nature-inspired living, and seamless elegance.</p>
-        <button className='px-6 p-2 bg-rose-600 font-bold text-sm text-white rounded-md font-primary hover:bg-rose-800 duration-300'>Learn More --</button>
+      <div className='bg-rose-100 pb-0 md:p-32 md:pb-0 md:px-7 lg:px-32 lg:pb-0 pt-36 md:pt-44 lg:pt-48 h-auto md:h-auto grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-6'>
+        <div className='pb-0'>
+        <p className='font-primary md:px-0 lg:px-0 font-bold text-4xl pb-5 px-16'>Find Your Root in Luxury and Comfort at <span className='text-rose-600 font-extrabold'>Akar Estates</span></p>
+        <p className='font-primary md:px-0 lg:px-0 pb-5 text-sm font-bold px-16'>Discover a harmonious blend of modern design, nature-inspired living, and seamless elegance.</p>
+        <button className='mx-16 px-6 md:mx-0 lg:mx-0 p-2 bg-rose-600 font-bold text-sm text-white rounded-md font-primary hover:bg-rose-800 duration-300'>Learn More --</button>
         </div>
+        <div className='overflow-hidden h-80 mt-12'>
         <img src={headerimage} alt="" className='md:h-fit sm:h-fit' />
+        </div>
       </div>
     
       <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10' id="about-us">
         <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
           <div className='about-header'>
-        <p className='text-sm text-rose-300 font-primary tracking-[.40em] font-bold md:px-5 lg:px-5'>ABOUT US</p>
-        <p className="text-3xl md:text-4xl lg:text-5xl font-primary font-bold">Akar Estates</p>
+        <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold'>ABOUT US</p>
+        <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Akar Estates</p>
         </div>
 
         <div>
@@ -34,6 +36,20 @@ function App() {
         </div>
       </div>
       <img src={aboutimage} alt="" className='w-full h-full md:hidden lg:hidden' />
+
+      <div className='bg-slate-100 p-9 md:p-7 lg:p-32'>
+      <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
+        <div>
+        <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>ESTATE FEATURES</p>
+        <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Features</p>
+        </div>
+
+        <div>
+
+        </div>
+        </div>
+
+      </div>
     </>
   )
 }
