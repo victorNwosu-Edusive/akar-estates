@@ -47,7 +47,7 @@ function Navbar() {
           <a href="#about-us" className="hidden lg:block  md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title="Destination">About Us</a>
           <a href="#features" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Experiences'>Features</a>
           <a href="#gallery" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Plan Your Trip'>Gallery</a>
-          <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Gallery'>Testimonial</a>
+          <a href="#testimonials" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Gallery'>Testimonial</a>
           <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Contact Us'>Contact Us</a>
 
         </div>
@@ -61,7 +61,7 @@ function Navbar() {
           <a href="#about-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title="Destination">About Us </a>
           <a href="#features" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Experiences'>Features</a>
           <a href="#gallery" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Plan Your Trip'>Gallery</a>
-          <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Testimonial</a>
+          <a href="#testimonials" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Testimonial</a>
           <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us</a>
       </div>
       

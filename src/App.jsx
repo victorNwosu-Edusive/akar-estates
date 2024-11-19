@@ -114,6 +114,15 @@ function App() {
           </div>
 
       </div>
+
+      <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10' id="testimonials">
+        <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
+          <div>
+        <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold'>OUR REVIEWS</p>
+        <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Testimonials</p>
+        </div>
+        </div>
+        </div>
     </>
   )
 }
