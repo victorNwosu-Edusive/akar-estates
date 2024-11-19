@@ -45,7 +45,7 @@ function Navbar() {
 
         
           <a href="#about-us" className="hidden lg:block  md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title="Destination">About Us</a>
-          <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Experiences'>Features</a>
+          <a href="#features" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Experiences'>Features</a>
           <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Plan Your Trip'>Gallery</a>
           <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Gallery'>Testimonial</a>
           <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Contact Us'>Contact Us</a>
@@ -59,7 +59,7 @@ function Navbar() {
           isOpen ? "left-0" : "left-full"
         } lg:hidden fixed grid duration-300 ease-out gap-2 text-left z-20 text-black font-primary text-md h-auto w-full p-3 px-11 pb-52 pt-32 bg-rose-100/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
           <a href="#about-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title="Destination">About Us </a>
-          <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Experiences'>Features</a>
+          <a href="#features" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Experiences'>Features</a>
           <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Plan Your Trip'>Gallery</a>
           <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Testimonial</a>
           <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us</a>
