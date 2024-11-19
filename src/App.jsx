@@ -5,6 +5,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/navbar'
 import { Icon } from '@iconify-icon/react';
+import imageOne from './assets/images/gallery-image-one.webp'
+import imageTwo from './assets/images/gallery-image-two.webp'
+import imageThree from './assets/images/gallery-image-three.webp'
 
 function App() {
 
@@ -38,8 +41,8 @@ function App() {
       </div>
       <img src={aboutimage} alt="" className='w-full h-full md:hidden lg:hidden' />
 
-      <div id='features' className='bg-slate-50 p-9 pt-28 md:p-7 lg:p-32 font-primary'>
-      <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 grid gap-8'>
+      <div id='features' className='bg-slate-50 p-9 pt-28 md:p-24 lg:p-32 font-primary'>
+      <div className='md:grid lg:grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 grid gap-8'>
         <div>
         <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>ESTATE FEATURES</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Features</p>
@@ -47,19 +50,19 @@ function App() {
 
         <div className='grid gap-10 text-black/60'>
           <div>
-            <Icon icon="circum:map" className='text-3xl md:text-5xl lg:text-5xl' />
+            <Icon icon="circum:map" className='text-3xl md:text-4xl lg:text-5xl' />
             <p className='text-sm font-bold'>Accessibility</p>
             <p className='text-sm'>Good road network and easy access to major cities or business districts.</p>
           </div>
 
           <div>
-            <Icon icon="ph:security-camera-light" className='text-3xl md:text-5xl lg:text-5xl'  />
+            <Icon icon="ph:security-camera-light" className='text-3xl md:text-4xl lg:text-5xl'  />
             <p className='text-sm font-bold'>CCTV and Surveillance</p>
             <p className='text-sm'>Cameras in strategic areas for monitoring.</p>
           </div>
 
           <div>
-          <Icon icon="fluent-mdl2:weights" className='text-3xl md:text-5xl lg:text-5xl'/>
+          <Icon icon="fluent-mdl2:weights" className='text-3xl md:text-4xl lg:text-5xl'/>
             <p className='text-sm font-bold'>Fitness Center</p>
             <p className='text-sm'>State-of-the-art gym equipment, including treadmills, free weights, and strength training machines.</p>
           </div>
@@ -67,19 +70,19 @@ function App() {
 
         <div className='grid gap-10 text-black/60'>
           <div>
-          <Icon icon="fluent:vehicle-car-parking-48-regular" className='text-3xl md:text-5xl lg:text-5xl'/>
+          <Icon icon="fluent:vehicle-car-parking-48-regular" className='text-3xl md:text-4xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Adequate Parking Spaces</p>
           <p className='text-sm'>Adequate parking spaces ensure convenience for residents and visitors alike. </p>
           </div>
 
           <div>
-          <Icon icon="fluent:payment-48-regular" className='text-3xl md:text-5xl lg:text-5xl'/>
+          <Icon icon="fluent:payment-48-regular" className='text-3xl md:text-4xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Flexible Payment Plans</p>
           <p className='text-sm'>Flexible payment plans offer buyers easy installment options.</p>
           </div>
 
           <div>
-          <Icon icon="ph:wifi-high-light" className='text-3xl md:text-5xl lg:text-5xl'/>
+          <Icon icon="ph:wifi-high-light" className='text-3xl md:text-4xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Internet and Network Connectivity</p>
           <p className='text-sm'>High-speed broadband and good mobile network.</p>
           </div>
@@ -88,13 +91,27 @@ function App() {
         </div>
         </div>
 
-        <div id='gallery' className='bg-black p-9 pt-28 md:p-7 lg:p-32 font-primary'>
-      <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 grid gap-8'>
+        <div id='gallery' className='bg-black pb-28 p-9 pt-28 md:p-24 lg:p-32 font-primary'>
+      <div className='md:grid lg:grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 grid gap-8'>
         <div className='text-white'>
         <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>ESTATE GALLERY</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Gallery</p>
         </div>
+
+        <div className='col-span-2 grid gap-3'>
+          <img src={imageOne} alt="" className='' />
+         
+         <div className='flex gap-3'>
+         <div className='col-span-1'>
+        <img src={imageTwo} alt=""  />
         </div>
+        <div className='col-span-1'>
+          <img src={imageThree} alt="" />
+        </div>
+          </div>
+          </div>
+    
+          </div>
 
       </div>
     </>
