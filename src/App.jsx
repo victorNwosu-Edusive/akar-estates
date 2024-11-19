@@ -38,14 +38,14 @@ function App() {
       </div>
       <img src={aboutimage} alt="" className='w-full h-full md:hidden lg:hidden' />
 
-      <div id='features' className='bg-slate-100 p-9 pt-28 md:p-7 lg:p-32 font-primary'>
+      <div id='features' className='bg-slate-50 p-9 pt-28 md:p-7 lg:p-32 font-primary'>
       <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 grid gap-8'>
         <div>
         <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>ESTATE FEATURES</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Features</p>
         </div>
 
-        <div className='grid gap-10 text-black/65'>
+        <div className='grid gap-10 text-black/60'>
           <div>
             <Icon icon="circum:map" className='text-3xl md:text-5xl lg:text-5xl' />
             <p className='text-sm font-bold'>Accessibility</p>
@@ -65,7 +65,7 @@ function App() {
           </div>
         </div>
 
-        <div className='grid gap-10 text-black/65'>
+        <div className='grid gap-10 text-black/60'>
           <div>
           <Icon icon="fluent:vehicle-car-parking-48-regular" className='text-3xl md:text-5xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Adequate Parking Spaces</p>
