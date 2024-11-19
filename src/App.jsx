@@ -45,7 +45,7 @@ function App() {
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Features</p>
         </div>
 
-        <div className='grid gap-10 text-black/60'>
+        <div className='grid gap-10 text-black/65'>
           <div>
             <Icon icon="circum:map" className='text-3xl md:text-5xl lg:text-5xl' />
             <p className='text-sm font-bold'>Accessibility</p>
@@ -61,21 +61,21 @@ function App() {
           <div>
           <Icon icon="fluent-mdl2:weights" className='text-3xl md:text-5xl lg:text-5xl'/>
             <p className='text-sm font-bold'>Fitness Center</p>
-            <p className='text-sm'>Gym facilities or jogging tracks.</p>
+            <p className='text-sm'>State-of-the-art gym equipment, including treadmills, free weights, and strength training machines.</p>
           </div>
         </div>
 
-        <div className='grid gap-10 text-black/60'>
+        <div className='grid gap-10 text-black/65'>
           <div>
           <Icon icon="fluent:vehicle-car-parking-48-regular" className='text-3xl md:text-5xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Adequate Parking Spaces</p>
-          <p className='text-sm'>For residents and visitors.</p>
+          <p className='text-sm'>Adequate parking spaces ensure convenience for residents and visitors alike. </p>
           </div>
 
           <div>
           <Icon icon="fluent:payment-48-regular" className='text-3xl md:text-5xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Flexible Payment Plans</p>
-          <p className='text-sm'>For buyers or renters.</p>
+          <p className='text-sm'>Flexible payment plans offer buyers easy installment options, making properties more accessible and easing financial strain.</p>
           </div>
 
           <div>
