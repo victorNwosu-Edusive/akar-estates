@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import headerimage from './assets/images/header-imager.png'
-import aboutimage from './assets/images/about-image.jpg'
+import aboutimage from './assets/images/about-image.webp'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/navbar'
