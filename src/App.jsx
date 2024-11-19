@@ -85,7 +85,15 @@ function App() {
           </div>
         </div>
 
+        </div>
+        </div>
 
+        <div id='gallery' className='bg-black p-9 pt-28 md:p-7 lg:p-32 font-primary'>
+      <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 grid gap-8'>
+        <div className='text-white'>
+        <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>ESTATE GALLERY</p>
+        <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Gallery</p>
+        </div>
         </div>
 
       </div>
