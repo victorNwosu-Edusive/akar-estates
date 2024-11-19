@@ -75,7 +75,7 @@ function App() {
           <div>
           <Icon icon="fluent:payment-48-regular" className='text-3xl md:text-5xl lg:text-5xl'/>
           <p className='text-sm font-bold'>Flexible Payment Plans</p>
-          <p className='text-sm'>Flexible payment plans offer buyers easy installment options, making properties more accessible and easing financial strain.</p>
+          <p className='text-sm'>Flexible payment plans offer buyers easy installment options.</p>
           </div>
 
           <div>
