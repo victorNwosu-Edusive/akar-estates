@@ -121,6 +121,10 @@ function App() {
         <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold'>OUR REVIEWS</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Testimonials</p>
         </div>
+
+        <div>
+          
+        </div>
         </div>
         </div>
     </>
