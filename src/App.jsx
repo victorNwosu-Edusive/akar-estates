@@ -156,6 +156,24 @@ function App() {
         </div>
         </div>
         </div>
+
+        <div className='bg-black p-9 md:p-32 lg:p-32 pt-32 pb-10' id="contact-us">
+        <div className=''>
+        <div className='text-white font-primary'>
+        <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>REACH OUT TO US</p>
+        <p className="text-3xl md:text-2xl lg:text-3xl font-primary text-white font-bold">Contact us</p>
+        <form action="" className=' *:border-[1px] *:outline-none *:p-2 *:w-full *:md:w-1/2 *:lg:w-1/2 gap-3 *:border-white grid'>
+          <input type="text" className='bg-transparent' />
+          <input type="text" className='bg-transparent'/>
+          <input type="email" className='bg-transparent'/>
+          <textarea name="" id="" className='bg-transparent'></textarea>
+          <button className='bg-white text-black font-bold hover:bg-slate-200 duration-300'>Submit</button>
+        </form>
+        </div>     
+        </div>
+        </div>
+
+
     </>
   )
 }
