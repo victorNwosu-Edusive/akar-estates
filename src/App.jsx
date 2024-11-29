@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='bg-rose-100 pb-0 md:p-32 md:pb-0 md:px-7 lg:px-32 lg:pb-0 pt-36 md:pt-44 lg:pt-48 h-auto md:h-auto grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-6'>
+      <div className='bg-slate-100 pb-0 md:p-32 md:pb-0 md:px-7 lg:px-32 lg:pb-0 pt-36 md:pt-44 lg:pt-48 h-auto md:h-auto grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-6'>
         <div className='pb-0'>
         <p className='font-primary md:px-0 lg:px-0 font-bold text-4xl pb-5 px-16'>Find Your Root in Luxury and Comfort at <span className='text-rose-600 font-extrabold'>Akar Estates</span></p>
         <p className='font-primary md:px-0 lg:px-0 pb-5 text-sm font-bold px-16'>Discover a harmonious blend of modern design, nature-inspired living, and seamless elegance.</p>
@@ -120,6 +120,35 @@ function App() {
           <div>
         <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold'>OUR REVIEWS</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary font-bold">Testimonials</p>
+        </div>
+
+        <div className='grid grid-cols-2 gap-6'>
+          <div>
+            <p className='text-sm text-slate-600 font-primary mb-3'>"Akar Estates offers the perfect blend of luxury and comfort. The attention to detail in the designs is exceptional, and the locations are prime. 
+            Moving into my new home here was the best decision I've made this year!"</p>
+            <p className='text-black font-bold text-sm font-primary'>David Johnson</p>
+          </div>
+
+          <div>
+            <p className='text-sm text-slate-600 font-primary mb-3'>"Living at Akar Estates has been an absolute dream. The properties are modern, spacious, and built with top-quality materials. 
+              Highly recommend it to anyone looking for their next home!"</p>
+            <p className='text-black font-bold text-sm font-primary'>Sophia Martinez</p>
+          </div>
+
+          <div>
+            <p className='text-sm text-slate-600 font-primary mb-3'>"I was impressed by the professionalism and quality of Akar Estates. The property I purchased is exactly as promised – beautiful, secure, 
+              and conveniently located. It’s rare to find such integrity in real estate."</p>
+            <p className='text-black font-bold text-sm font-primary'>Chike Okoro</p>
+          </div>
+
+          <div>
+            <p className='text-sm text-slate-600 font-primary mb-3'>"Akar Estates truly delivers on its promise of upscale living. The homes are well-designed, energy-efficient, and surrounded by serene environments. 
+              I couldn’t ask for a better place to raise my family!"</p>
+            <p className='text-black font-bold text-sm font-primary'>Fatima Khan</p>
+          </div>
+
+          
+
         </div>
 
         <div>

@@ -14,7 +14,7 @@ function Navbar() {
 
     return (
         <>
-        <nav className='fixed z-30 w-full lg:w-full p-4 ease-in bg-rose-100/75 backdrop-blur-md flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl'>
+        <nav className='fixed z-30 w-full lg:w-full p-4 ease-in bg-white/25 backdrop-blur-md flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl'>
         <div className='flex space-x-3 rtl:space-x-reverse px-7 lg:px-32'>
           <a href="" className='font-heading duration-300' onClick={closeMenu} >
           <img src={logo} alt="" className="h-10 w-auto"  />
@@ -44,10 +44,10 @@ function Navbar() {
         </div>
 
         
-          <a href="#about-us" className="hidden lg:block  md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title="Destination">About Us</a>
-          <a href="#features" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Experiences'>Features</a>
-          <a href="#gallery" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Plan Your Trip'>Gallery</a>
-          <a href="#testimonials" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Gallery'>Testimonial</a>
+          <a href="#about-us" className="hidden lg:block  md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title="About Us">About Us</a>
+          <a href="#features" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Features'>Features</a>
+          <a href="#gallery" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Gallery'>Gallery</a>
+          <a href="#testimonials" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Testimonial'>Testimonial</a>
           <a href="" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Contact Us'>Contact Us</a>
 
         </div>
@@ -57,11 +57,11 @@ function Navbar() {
 
       <div id="mobile" className={`${
           isOpen ? "left-0" : "left-full"
-        } lg:hidden fixed grid duration-300 ease-out gap-2 text-left z-20 text-black font-primary text-md h-auto w-full p-3 px-11 pb-52 pt-32 bg-rose-100/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
-          <a href="#about-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title="Destination">About Us </a>
-          <a href="#features" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Experiences'>Features</a>
-          <a href="#gallery" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Plan Your Trip'>Gallery</a>
-          <a href="#testimonials" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Testimonial</a>
+        } lg:hidden fixed grid duration-300 ease-out gap-2 text-left z-20 text-black font-primary text-md h-auto w-full p-3 px-11 pb-52 pt-32 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
+          <a href="#about-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title="About Us">About Us </a>
+          <a href="#features" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Features'>Features</a>
+          <a href="#gallery" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Gallery</a>
+          <a href="#testimonials" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Testimonial'>Testimonial</a>
           <a href="" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us</a>
       </div>
       
