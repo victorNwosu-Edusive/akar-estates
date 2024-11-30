@@ -57,7 +57,7 @@ function Navbar() {
 
       <div id="mobile" className={`${
           isOpen ? "left-0" : "left-full"
-        } lg:hidden fixed grid duration-300 ease-out gap-2 text-left z-20 text-black font-primary text-md h-auto w-full p-3 px-11 pb-52 pt-32 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
+        } lg:hidden fixed grid duration-300 ease-out gap-2 text-left z-20 text-black font-primary text-sm h-auto w-full p-3 px-11 pb-52 pt-32 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
           <a href="#about-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title="About Us">About Us </a>
           <a href="#features" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Features'>Features</a>
           <a href="#gallery" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Gallery</a>
