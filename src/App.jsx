@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import headerimage from './assets/images/header-imager.png'
 import aboutimage from './assets/images/about-image.webp'
-import viteLogo from '/vite.svg'
+import footerimage from './assets/images/akar-estate-footer.png'
 import './App.css'
 import Navbar from './components/navbar'
 import { Icon } from '@iconify-icon/react';
@@ -162,7 +162,7 @@ function App() {
         <div className='text-white font-primary'>
         <p className='text-[12px] text-gray-400 font-primary tracking-[.40em] font-bold '>REACH OUT TO US</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-primary text-white font-bold">Contact us</p>
-        <form action="" className=' *:border-[1px] *:outline-none *:p-2 *:text-sm *:w-full *:md:w-1/2 *:lg:w-1/2 gap-3 *:border-white grid'>
+        <form action="" className=' *:border-[1px] pb-36 *:outline-none *:p-2 *:text-sm *:w-full *:md:w-1/2 *:lg:w-1/2 gap-3 *:border-white grid'>
           <input type="text" placeholder='First Name' className='bg-transparent' />
           <input type="text" placeholder='Last Name' className='bg-transparent'/>
           <input type="email" placeholder='Email' className='bg-transparent'/>
@@ -170,6 +170,10 @@ function App() {
           <button className='bg-white text-black font-bold hover:bg-slate-200 duration-300 text-sm'>Submit</button>
         </form>
         </div>     
+        </div>
+        <div className='flex justify-between'>
+        <img src={footerimage} alt="" className='w-8 md:w-16 lg:w-16 h-auto' />
+        <p className='font-primary text-white text-[8px] md:text-[11px] lg:text-[11px] font-bold'>Copyright Akar Estates 2024</p>
         </div>
         </div>
 
