@@ -172,7 +172,7 @@ function App() {
         </div>     
         </div>
         <div className='flex justify-between'>
-        <img src={footerimage} alt="" className='w-8 md:w-16 lg:w-16 h-auto' />
+        <img src={footerimage} alt="" className='w-10 md:w-16 lg:w-16 h-auto' />
         <p className='font-primary text-white text-[8px] md:text-[11px] lg:text-[11px] font-bold'>Copyright Akar Estates 2024</p>
         </div>
         </div>
