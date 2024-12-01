@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from "framer-motion";
 import headerimage from './assets/images/header-imager.png'
 import aboutimage from './assets/images/about-image.webp'
 import footerimage from './assets/images/akar-estate-footer.png'
@@ -11,19 +12,46 @@ import imageThree from './assets/images/gallery-image-three.webp'
 
 function App() {
 
+  const containerVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.0, ease: "easeInOut" } },
+  };
+
   return (
     <>
       <Navbar />
-      <div className='bg-slate-100 pb-0 md:p-32 md:pb-0 md:px-7 lg:px-32 lg:pb-0 pt-36 md:pt-44 lg:pt-48 h-auto md:h-auto grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-6'>
-        <div className='pb-0'>
-        <p className='font-primary md:px-0 lg:px-0 font-bold text-4xl pb-5 px-16'>Find Your Root in Luxury and Comfort at <span className='text-rose-600 font-extrabold'>Akar Estates</span></p>
-        <p className='font-primary md:px-0 lg:px-0 pb-5 text-sm font-bold px-16'>Discover a harmonious blend of modern design, nature-inspired living, and seamless elegance.</p>
-        <a className='mx-16 px-6 md:mx-0 lg:mx-0 p-2 bg-rose-600 font-bold text-sm text-white rounded-md font-primary hover:bg-rose-800 duration-300' href='#contact-us'>Learn More --</a>
-        </div>
-        <div className='overflow-hidden h-auto mt-12'>
-        <img src={headerimage} alt="" className='md:h-fit sm:h-fit' />
-        </div>
-      </div>
+      <motion.div 
+        className='bg-slate-100 pb-0 md:p-32 md:pb-0 md:px-7 lg:px-32 lg:pb-0 pt-36 md:pt-44 lg:pt-48 h-auto md:h-auto grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-6'
+        initial="hidden"
+        animate="visible"
+        variants={containerVariant}
+      >
+        <motion.div className='pb-0' variants={containerVariant}>
+          <motion.p 
+            className='font-primary md:px-0 lg:px-0 font-bold text-4xl pb-5 px-16'
+            variants={containerVariant}
+          >
+            Find Your Root in Luxury and Comfort at <span className='text-rose-600 font-extrabold'>Akar Estates</span>
+          </motion.p>
+          <motion.p 
+            className='font-primary md:px-0 lg:px-0 pb-5 text-sm font-bold px-16'
+            variants={containerVariant}
+          >
+            Discover a harmonious blend of modern design, nature-inspired living, and seamless elegance.
+          </motion.p>
+          <motion.a 
+            className='mx-16 px-6 md:mx-0 lg:mx-0 p-2 bg-rose-600 font-bold text-sm text-white rounded-md font-primary hover:bg-rose-800 duration-300' 
+            href='#contact-us'
+            variants={containerVariant}
+          >
+            Learn More --
+          </motion.a>
+        </motion.div>
+        <motion.div className='overflow-hidden h-auto mt-12' variants={containerVariant}>
+          <motion.img src={headerimage} alt="" className='md:h-fit sm:h-fit' />
+        </motion.div>
+      </motion.div>
+
     
       <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10' id="about-us">
         <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
