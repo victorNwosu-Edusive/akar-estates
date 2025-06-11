@@ -1,5 +1,6 @@
 import logo from "../assets/images/akar-estate-header-one.png";
 import React, { useState } from 'react';
+import { Outlet } from "react-router-dom";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
 
     return (
         <>
-        <nav className='fixed z-30 w-full lg:w-full p-4 ease-in bg-white/25 backdrop-blur-md flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl'>
+        <nav className='fixed z-50 w-full lg:w-full p-4 ease-in bg-white/25 backdrop-blur-md flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl'>
         <div className='flex space-x-3 rtl:space-x-reverse px-7 lg:px-32'>
           <a href="" className='font-heading duration-300' onClick={closeMenu} >
           <img src={logo} alt="" className="h-10 w-auto"  />
@@ -22,7 +23,7 @@ function Navbar() {
           
         </div>
 
-        <div className='md:flex md:items-center md:space-x-9 md:rtl:space-x-reverse md:text-black md:font-primary'>
+        <div className='md:flex md:items-center md:space-x-9 md:rtl:space-x-reverse'>
         <div className="lg:hidden" onClick={toggleMenu}>
           <button className="text-white focus:outline-none relative scale-x-[-1] w-6 h-6">
             <span
@@ -44,11 +45,10 @@ function Navbar() {
         </div>
 
         
-          <a href="#about-us" className="hidden lg:block  md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title="About Us">About Us</a>
-          <a href="#features" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Features'>Features</a>
-          <a href="#gallery" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Gallery'>Gallery</a>
-          <a href="#testimonials" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Testimonial'>Testimonial</a>
-          <a href="#contact-us" className="hidden lg:block md:text-[12px] font-bold p-1 border-b-2 border-transparent hover:border-b-2 hover:border-rose-400 hover:text-rose-600 duration-300 " title='Contact Us'>Contact Us</a>
+          <a href="#features" className="hidden lg:block md:text-[12px]  p-1 border-b-2 border-transparent hover:border-b-2  hover:text-rose-600 duration-300 " title='Features'>Features</a>
+          <a href="#gallery" className="hidden lg:block md:text-[12px]  p-1 border-b-2 border-transparent hover:border-b-2  hover:text-rose-600 duration-300 " title='Gallery'>Gallery</a>
+          <a href="#testimonials" className="hidden lg:block md:text-[12px]  p-1 border-b-2 border-transparent hover:border-b-2  hover:text-rose-600 duration-300 " title='Testimonial'>Testimonial</a>
+          <a href="#contact-us" className="hidden lg:block md:text-[12px]  p-1 border-b-2 border-transparent hover:border-b-2  hover:text-rose-600 duration-300 " title='Contact Us'>Contact Us</a>
 
         </div>
 
@@ -65,7 +65,7 @@ function Navbar() {
           <a href="#contact-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us</a>
       </div>
       
-      
+      <Outlet />
         </>
     );  
 }
