@@ -140,35 +140,39 @@ function App() {
       </div>
 
       <div className='bg-white p-9 md:p-32 lg:p-32 pt-32 pb-10' id="testimonials">
-        <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-5'>
+        <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-2'>
           <div>
         <p className='text-[12px] text-gray-400 tracking-[.40em] font-bold'>OUR REVIEWS</p>
         <p className="text-3xl md:text-2xl lg:text-3xl font-bold">Testimonials</p>
         </div>
 
-        <div className='grid grid-cols-2 gap-6'>
-          <div>
-            <p className='text-sm text-slate-600 mb-3'> <div className='absolute text-9xl text-red-200/35'>“</div> "Akar Estates offers the perfect blend of luxury and comfort. The attention to detail in the designs is exceptional, and the locations are prime. 
+       <div className='grid lg:grid-cols-2 gap-6 md:gap-4 lg:gap-4'>
+          <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative'>
+            <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div> 
+            <p className='text-sm text-slate-600 mb-3'> "Akar Estates offers the perfect blend of luxury and comfort. The attention to detail in the designs is exceptional, and the locations are prime. 
             Moving into my new home here was the best decision I've made this year!"</p>
-            <p className='text-black font-bold text-sm '>David Johnson</p>
+            <p className='text-black font-[500] text-xl '>David Johnson</p>
           </div>
 
-          <div>
-            <p className='text-sm text-slate-600 mb-3'><div className='absolute text-9xl text-red-200/35'>“</div> "Living at Akar Estates has been an absolute dream. The properties are modern, spacious, and built with top-quality materials. 
+          <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative'>
+            <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div>
+            <p className='text-sm text-slate-600 mb-3'> "Living at Akar Estates has been an absolute dream. The properties are modern, spacious, and built with top-quality materials. 
               Highly recommend it to anyone looking for their next home!"</p>
-            <p className='text-black font-bold text-sm'>Sophia Martinez</p>
+            <p className='text-black font-[500] text-xl '>Sophia Martinez</p>
           </div>
 
-          <div>
-            <p className='text-sm text-slate-600 mb-3'> <div className='absolute text-9xl text-red-200/35'>“</div> "I was impressed by the professionalism and quality of Akar Estates. The property I purchased is exactly as promised – beautiful, secure, 
+          <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative'>
+            <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div>
+            <p className='text-sm text-slate-600 mb-3'>  "I was impressed by the professionalism and quality of Akar Estates. The property I purchased is exactly as promised – beautiful, secure, 
               and conveniently located. It’s rare to find such integrity in real estate."</p>
-            <p className='text-black font-bold text-sm'>Chike Okoro</p>
+            <p className='text-black font-[500] text-xl '>Chike Okoro</p>
           </div>
 
-          <div className='relative'>
-            <p className='text-sm text-slate-600 mb-3'> <div className='absolute text-9xl text-red-200/35'>“</div> "Akar Estates truly delivers on its promise of upscale living. The homes are well-designed, energy-efficient, and surrounded by serene environments. 
+          <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative' >
+            <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div>
+            <p className='text-sm text-slate-600 mb-3'>  "Akar Estates truly delivers on its promise of upscale living. The homes are well-designed, energy-efficient, and surrounded by serene environments. 
               I couldn’t ask for a better place to raise my family!"</p>
-            <p className='text-black font-bold text-sm '>Fatima Khan</p>
+            <p className='text-black font-[500] text-xl  '>Fatima Khan</p>
           </div>
 
           

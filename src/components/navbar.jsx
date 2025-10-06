@@ -1,5 +1,5 @@
 import logo from "../assets/images/akar-estate-header-one.png";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet } from "react-router-dom";
 
 function Navbar() {
@@ -13,9 +13,27 @@ function Navbar() {
         setIsOpen(false);
       };
 
+      const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionHeight = window.innerHeight * 0.3; // adjust for when you want the change
+      if (window.scrollY > sectionHeight) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
     return (
         <>
-        <nav className='fixed z-50 w-full lg:w-full p-4 ease-in bg-white/25 backdrop-blur-md flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl'>
+        <nav className={`fixed z-50 w-full lg:w-full p-4 ease-in ${
+        scrolled ? "bg-white" : "bg-transparent"
+      } flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl transition-all duration-300`}>
         <div className='flex space-x-3 rtl:space-x-reverse px-7 lg:px-32'>
           <a href="" className='font-heading duration-300' onClick={closeMenu} >
           <img src={logo} alt="" className="h-10 w-auto"  />
@@ -57,12 +75,14 @@ function Navbar() {
 
       <div id="mobile" className={`${
           isOpen ? "left-0" : "left-full"
-        } lg:hidden fixed grid duration-300 ease-out gap-2 text-left z-20 text-black font-primary text-sm h-auto w-full p-3 px-11 pb-52 pt-32 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
-          <a href="#about-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title="About Us">About Us </a>
-          <a href="#features" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Features'>Features</a>
-          <a href="#gallery" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Gallery'>Gallery</a>
-          <a href="#testimonials" className="md:block  font-bold p-2 hover:text-red-600 rounded-md hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Testimonial'>Testimonial</a>
-          <a href="#contact-us" className="md:block  font-bold p-2 hover:text-red-600 rounded-md  hover:bg-rose-600/10 duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us</a>
+        } lg:hidden fixed grid duration-300 ease-out gap-6 text-left z-20 text-black font-primary text-sm h-auto w-full p-3 pb-72 pt-28 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
+          <a href="#about-us" className="md:block text-3xl  font-thin border-b-[1px] p-2 hover:text-red-600   duration-300 " onClick={closeMenu} title="About Us">About us </a>
+          <a href="#features" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600   duration-300 " onClick={closeMenu} title='Features'>Features </a>
+          <a href="#gallery" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600  duration-300 " onClick={closeMenu} title='Gallery'>Gallery </a>
+          <a href="#testimonials" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600 duration-300 " onClick={closeMenu} title='Testimonial'>Testimonial </a>
+          <a href="#contact-us" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600  duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us </a>
+
+      
       </div>
       
       <Outlet />
