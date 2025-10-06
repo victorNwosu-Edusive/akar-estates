@@ -36,7 +36,7 @@ function App() {
         </div>
 
         <div className='flex justify-center items-center'>
-          <form action="" className='relative p-6 bg-white shadow-slate-200 md:w-full w-full md:mx-24 mx-16 lg:w-fit shadow-md z-40 rounded-sm *:text-[13px] -mt-16'>
+          <form action="" className='relative p-6 bg-white shadow-slate-200 md:w-full w-full md:mx-24 mx-16 lg:w-fit shadow-md z-30 rounded-sm *:text-[13px] -mt-16'>
             <div className='grid md:grid lg:flex gap-4 md:gap-4 lg:gap-4 '>
             <input type="text" placeholder='Where?' className='p-4 px-5 md:px-4 lg:px-5 outline-none bg-slate-100/65 focus:bg-slate-100 duration-300' />
             <div className='md:flex grid md:w-full md:gap-4 gap-4'>
