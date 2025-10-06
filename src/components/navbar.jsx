@@ -75,12 +75,12 @@ function Navbar() {
 
       <div id="mobile" className={`${
           isOpen ? "left-0" : "left-full"
-        } lg:hidden fixed grid duration-300 ease-out gap-6 text-left z-40 text-black font-primary text-sm h-auto w-full p-3 pb-72 pt-28 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
-          <a href="#about-us" className="md:block text-3xl  font-thin border-b-[1px] p-2 hover:text-red-600   duration-300 " onClick={closeMenu} title="About Us">About us </a>
-          <a href="#features" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600   duration-300 " onClick={closeMenu} title='Features'>Features </a>
-          <a href="#gallery" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600  duration-300 " onClick={closeMenu} title='Gallery'>Gallery </a>
-          <a href="#testimonials" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600 duration-300 " onClick={closeMenu} title='Testimonial'>Testimonial </a>
-          <a href="#contact-us" className="md:block  text-3xl font-thin border-b-[1px] p-2 hover:text-red-600  duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us </a>
+        } lg:hidden fixed grid duration-300 ease-out gap-6 text-left z-40 text-black font-primary text-sm h-auto w-full p-3 pb-80 pt-28 bg-white/90 backdrop-blur-md mx-auto max-w-screen-xl `}>
+          <a href="#about-us" className="md:block text-3xl  font-thin border-b-[1px] pb-5 p-2 hover:text-red-600   duration-300 " onClick={closeMenu} title="About Us">About us </a>
+          <a href="#features" className="md:block  text-3xl font-thin border-b-[1px] pb-5 p-2 hover:text-red-600   duration-300 " onClick={closeMenu} title='Features'>Features </a>
+          <a href="#gallery" className="md:block  text-3xl font-thin border-b-[1px] pb-5 p-2 hover:text-red-600  duration-300 " onClick={closeMenu} title='Gallery'>Gallery </a>
+          <a href="#testimonials" className="md:block  text-3xl font-thin border-b-[1px] pb-5 p-2 hover:text-red-600 duration-300 " onClick={closeMenu} title='Testimonial'>Testimonial </a>
+          <a href="#contact-us" className="md:block  text-3xl font-thin border-b-[1px] pb-5 p-2 hover:text-red-600  duration-300 " onClick={closeMenu} title='Contact Us'>Contact Us </a>
 
       
       </div>

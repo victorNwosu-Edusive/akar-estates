@@ -43,7 +43,7 @@ function App() {
             <input type="text" placeholder='House Type' className='p-4 px-5 md:px-4 lg:px-5 outline-none bg-slate-100/65 focus:bg-slate-100 duration-300' />
             <input type="number" placeholder='Rooms' className='p-4 px-5 md:px-4 lg:px-5 outline-none bg-slate-100/65 focus:bg-slate-100 duration-300' />
             </div>
-            <button className='border-none hover:bg-rose-800 duration-300 bg-rose-600 p-4 px-8 text-white rounded-md flex justify-center items-center gap-2 font-semibold'><Search size={20} /><p className='block md:block lg:hidden'>Find for you</p></button>
+            <button className='border-none hover:bg-rose-800 duration-300 bg-rose-600 p-4 px-8 text-white rounded-md outline-none border-none flex justify-center items-center gap-2 font-semibold'><Search size={20} /><p className='block md:block lg:hidden'>Find for you</p></button>
             </div>
           </form>
         </div>
@@ -143,10 +143,10 @@ function App() {
         <div className='md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 grid gap-2'>
           <div>
         <p className='text-[12px] text-gray-400 tracking-[.40em] font-bold'>OUR REVIEWS</p>
-        <p className="text-3xl md:text-2xl lg:text-3xl font-bold">Testimonials</p>
+        <p className="text-3xl md:text-2xl lg:text-3xl font-bold mb-10">Testimonials</p>
         </div>
 
-       <div className='grid lg:grid-cols-2 gap-6 md:gap-4 lg:gap-4'>
+       <div className='grid lg:grid-cols-2 gap-8 md:gap-4 lg:gap-4'>
           <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative'>
             <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div> 
             <p className='text-sm text-slate-600 mb-3'> "Akar Estates offers the perfect blend of luxury and comfort. The attention to detail in the designs is exceptional, and the locations are prime. 
@@ -191,11 +191,11 @@ function App() {
         <p className='text-[12px] text-gray-400 tracking-[.40em] font-bold '>REACH OUT TO US</p>
         <p className="text-3xl md:text-2xl lg:text-3xl text-white font-bold">Contact us</p>
         <form action="" className=' *:border-[1px] pb-12 *:outline-none *:p-2 *:text-sm *:w-full *:md:w-1/2 *:lg:w-1/2 gap-3 *:border-white grid'>
-          <input type="text" placeholder='First Name' className='bg-transparent' />
-          <input type="text" placeholder='Last Name' className='bg-transparent'/>
-          <input type="email" placeholder='Email' className='bg-transparent'/>
-          <textarea name="" placeholder='Message' id="" className='bg-transparent'></textarea>
-          <button className='bg-white text-black font-bold hover:bg-slate-200 duration-300 text-sm'>Submit</button>
+          <input type="text" placeholder='First Name' className='bg-gray-700 rounded-md outline-none border-none' />
+          <input type="text" placeholder='Last Name' className='bg-gray-700 rounded-md outline-none border-none'/>
+          <input type="email" placeholder='Email' className='bg-gray-700 rounded-md outline-none border-none'/>
+          <textarea name="" placeholder='Message' id="" className='bg-gray-700 rounded-md outline-none border-none'></textarea>
+          <button className='bg-rose-600 border-none rounded-md hover:text-black text-white font-bold hover:bg-slate-200 duration-300 text-sm'>Submit</button>
         </form>
         </div>     
 
