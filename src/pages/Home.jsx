@@ -4,10 +4,10 @@ import aboutimage from '../assets/images/about-image.webp'
 import footerimage from '../assets/images/akar-estate-footer.png'
 import '../App.css'
 import { Icon } from '@iconify-icon/react';
-import imageOne from '../assets/images/gallery-image-one.webp'
+import imageOne from '../assets/images/gallery-image-one.png'
 import imageTwo from '../assets/images/gallery-image-two.webp'
 import imageThree from '../assets/images/gallery-image-three.webp'
-import { Search } from 'lucide-react'
+import { Search, UserCircle, UserCircle2, UserCircle2Icon } from 'lucide-react'
 
 function App() {
 
@@ -43,7 +43,7 @@ function App() {
             <input type="text" placeholder='House Type' className='p-4 px-5 md:px-4 lg:px-5 outline-none bg-slate-100/65 focus:bg-slate-100 duration-300' />
             <input type="number" placeholder='Rooms' className='p-4 px-5 md:px-4 lg:px-5 outline-none bg-slate-100/65 focus:bg-slate-100 duration-300' />
             </div>
-            <button className='border-none hover:bg-rose-800 duration-300 bg-rose-600 p-4 px-8 text-white rounded-md outline-none border-none flex justify-center items-center gap-2 font-semibold'><Search size={20} /><p className='block md:block lg:hidden'>Find for you</p></button>
+            <button className='hover:bg-rose-800 duration-300 bg-rose-600 p-4 px-8 text-white rounded-md outline-none border-none flex justify-center items-center gap-2 font-semibold'><Search size={20} /><p className='block md:block lg:hidden'>Find for you</p></button>
             </div>
           </form>
         </div>
@@ -151,37 +151,47 @@ function App() {
             <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div> 
             <p className='text-sm text-slate-600 mb-3'> "Akar Estates offers the perfect blend of luxury and comfort. The attention to detail in the designs is exceptional, and the locations are prime. 
             Moving into my new home here was the best decision I've made this year!"</p>
-            <p className='text-black font-[500] text-xl '>David Johnson</p>
+            <div className='flex items-center gap-2'>
+            <Icon icon="mage:user-circle-fill" className='text-slate-300' width="22" height="22" />
+            <p className='text-slate-600 font-[500] text-xl text-[15px] '>David Johnson</p>
+            </div>
           </div>
 
           <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative'>
             <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div>
             <p className='text-sm text-slate-600 mb-3'> "Living at Akar Estates has been an absolute dream. The properties are modern, spacious, and built with top-quality materials. 
               Highly recommend it to anyone looking for their next home!"</p>
-            <p className='text-black font-[500] text-xl '>Sophia Martinez</p>
+            <div className='flex items-center gap-2'>
+            <Icon icon="mage:user-circle-fill" className='text-slate-300' width="22" height="22" />
+            <p className='text-slate-600 font-[500] text-[15px] '>Sophia Martinez</p>
+          </div>
           </div>
 
           <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative'>
             <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div>
             <p className='text-sm text-slate-600 mb-3'>  "I was impressed by the professionalism and quality of Akar Estates. The property I purchased is exactly as promised – beautiful, secure, 
               and conveniently located. It’s rare to find such integrity in real estate."</p>
-            <p className='text-black font-[500] text-xl '>Chike Okoro</p>
+            <div className='flex items-center gap-2'>
+            <Icon icon="mage:user-circle-fill" className='text-slate-300' width="22" height="22" />
+            <p className='text-slate-600 font-[500] text-[15px] '>Chike Okoro</p>
+          </div>
           </div>
 
           <div className='bg-slate-50 border-[1px] p-9 rounded-xl relative' >
             <div className='absolute text-9xl text-red-200/35 font-[Arial] -top-7 -left-5'>“</div>
             <p className='text-sm text-slate-600 mb-3'>  "Akar Estates truly delivers on its promise of upscale living. The homes are well-designed, energy-efficient, and surrounded by serene environments. 
               I couldn’t ask for a better place to raise my family!"</p>
-            <p className='text-black font-[500] text-xl  '>Fatima Khan</p>
+            <div className='flex items-center gap-2'>
+            <Icon icon="mage:user-circle-fill" className='text-slate-300' width="22" height="22" />
+            <p className='text-slate-600 font-[500] text-[15px]  '>Fatima Khan</p>
+          </div>
           </div>
 
           
 
         </div>
 
-        <div>
           
-        </div>
         </div>
         </div>
 

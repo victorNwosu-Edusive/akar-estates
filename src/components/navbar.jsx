@@ -32,7 +32,7 @@ function Navbar() {
     return (
         <>
         <nav className={`fixed z-50 w-full lg:w-full p-4 ease-in ${
-        scrolled ? "bg-white" : "bg-transparent"
+        scrolled ? "bg-white drop-shadow-sm" : "bg-transparent"
       } flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl transition-all duration-300`}>
         <div className='flex space-x-3 rtl:space-x-reverse px-7 lg:px-32'>
           <a href="" className='font-heading duration-300' onClick={closeMenu} >
