@@ -153,7 +153,7 @@ function App() {
             Moving into my new home here was the best decision I've made this year!"</p>
             <div className='flex items-center gap-2'>
             <Icon icon="mage:user-circle-fill" className='text-slate-300' width="22" height="22" />
-            <p className='text-slate-600 font-[500] text-xl text-[15px] '>David Johnson</p>
+            <p className='text-slate-600 font-[500] text-[15px] '>David Johnson</p>
             </div>
           </div>
 
